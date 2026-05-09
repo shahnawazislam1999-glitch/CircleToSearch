@@ -1354,7 +1354,7 @@ fun CircleToSearchScreen(
             var isCopyTextTriggered by remember { mutableStateOf(false) }
 
             androidx.compose.animation.AnimatedVisibility(
-                visible = isUIVisible && !isCopyMode && !isEntityExtractMode,
+                visible = false,
                 enter = slideInVertically(
                     initialOffsetY = { it }, // slides up from below
                     animationSpec = tween(300, easing = androidx.compose.animation.core.CubicBezierEasing(0f, 0f, 0.2f, 1f))
